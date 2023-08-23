@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --global-font: "Mulish";
+  --primary-font-color: #b52184;
+  --secondary-font-color: #312d64;
+  --primary-background-color: #f9f4fb;
+  --secondary-background-color: #312d64;
+  --card-background-color: #ffffff;
+}
+
+#section1 {
+  min-height: 100vh;
+  max-height: 100vh;
+  background: var(--primary-background-color);
+  font-family: var(--global-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 9rem;
+}
+
+#section1 > img {
+  width: 36rem;
+  height: 37rem;
+}
+
+#section1 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-font-color);
+  margin: 10rem 0 0;
+}
+
+#section1 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-font-color);
+  margin: 2rem 0 10rem;
+}
+
+#section2 {
+  background: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  font-family: var(--global-font);
+  padding: 5rem 0 5rem;
+  justify-content: center;
+}
+
+#section2 .card {
+  background: var(--primary-background-color);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+#section2 h3 {
+  font-size: 3rem;
+  margin: 3rem 0 2rem;
+  color: var(--primary-font-color);
+}
+
+#section2 .card p {
+  width: 26.5rem;
+  font-size: 1.6rem;
+  color: var(--secondary-font-color);
+}
+
+#section3 {
+  font-family: var(--global-font);
+  padding: 4rem;
+}
+
+#section3 form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#section3 form fieldset legend {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-font-color);
+  margin-bottom: 4rem;
+}
+
+#section3 form fieldset .input-wrapper {
+  font-family: var(--global-font);
+  border: 2px solid var(--secondary-background-color);
+  border-radius: 16px;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+#section3 form fieldset .input-wrapper input,
+textarea {
+  font-family: var(--global-font);
+  outline: none;
+  font-size: 1.6rem;
+  color: var(--secondary-font-color);
+  padding: 1.2rem 1.6rem;
+}
+
+#section3 form fieldset .input-wrapper input::placeholder,
+textarea::placeholder {
+  font-family: var(--global-font);
+  color: var(--secondary-font-color);
+}
+
+#section3 form fieldset textarea {
+  min-height: 1.2rem;
+  border: 2px solid var(--secondary-background-color);
+  border-radius: 16px;
+  background: none;
+}
+
+#section3 form fieldset input[type="submit"] {
+  width: 15rem;
+  height: 4.5rem;
+  border-radius: 16px;
+  background: var(--secondary-background-color);
+  color: var(--card-background-color);
+  font-family: var(--global-font);
+  font-weight: 600;
+}
+
+footer {
+  background: var(--secondary-background-color);
+  color: var(--card-background-color);
+  font-family: var(--global-font);
+  font-size: 2rem;
+  text-align: center;
+  padding: 3.2rem 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  #section1 > img {
+    height: 50vh;
+    width: auto;
+  }
+
+  #section2 {
+    flex-direction: row;
+  }
+
+  #section2 .card {
+    height: 40rem;
+  }
+
+  #section3 {
+    background: url(./assets/backgroundSection.png) no-repeat right;
+    padding-left: 10vw;
+  }
+
+  #section3 form {
+    width: 50vw;
+  }
+}
